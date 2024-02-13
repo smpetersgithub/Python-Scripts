@@ -52,10 +52,5 @@ def generate_sqlcmd_script(directories):
 
 if __name__ == "__main__":
     # List of directories containing .sql files
-    directories = [
-        r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\'
-        #r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\'
-        #r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\'
-        #r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\'
-    ]
+    directories = []
     generate_sqlcmd_script(directories)
