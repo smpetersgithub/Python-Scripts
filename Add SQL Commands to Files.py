@@ -104,12 +104,7 @@ if __name__ == "__main__":
     option_to_use = 'option1'  # for example
     code_block = options[option_to_use]
 
-    directories = [
-        r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\'
-        #,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\'
-        #,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\'
-        #,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\'
-    ]
+    directories = []
 
     prepend_code_block_with_encoding_handling(directories, code_block, encodings, options)
     print("Done processing .sql files.")
