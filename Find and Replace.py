@@ -69,14 +69,19 @@ if __name__ == "__main__":
     # and replace it with this string
     replacement_string = 'bsav2_mytest_db'
     
-    encodings = ['utf-8-sig', 'utf-8', 'latin-1']
+    # Ask for confirmation before starting the process
+    confirmation = input(f"Are you sure you want to replace occurrences of '{search_pattern}' with '{replacement_string}' in all specified directories? (Y/N): ").strip().lower()
+    if confirmation == 'y':
+        encodings = ['utf-8-sig', 'utf-8', 'latin-1']
 
-    directories = [
-        r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\'
-        ,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\'
-        ,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\'
-        ,r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\'
+        directories = [
+            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\',
+            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\',
+            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\',
+            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\',
         ]
-    
-    replace_in_files(directories, search_pattern, replacement_string, encodings)
-    print("Done processing all directories.")
+        
+        replace_in_files(directories, search_pattern, replacement_string, encodings)
+        print("Done processing all directories.")
+    else:
+        print("Operation cancelled by the user.")
