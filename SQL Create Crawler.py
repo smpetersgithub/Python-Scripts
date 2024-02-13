@@ -94,7 +94,7 @@ directories = [
     # Add other directories as needed
 ]
 
-output_dir =  r'C:\BabelfishCompass\Python Scripts\Output\\' 
+output_dir =  r'C:\temp\\' 
 
 # Find SQL files in directories
 sql_file_paths = find_sql_files_in_directories(directories)
