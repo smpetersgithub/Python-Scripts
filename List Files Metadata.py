@@ -77,8 +77,8 @@ def analyze_sql_file(file_path):
     return counts, encoding_used
 
 # Set the directory and output file path
-directory = r'c:\b\\'
-output_file = r"C:\BabelfishCompass\Python Scripts\Output\FileAnalysisSQL.txt"
+directory = r'c:\temp\\'
+output_file = r"c:\temp\FileAnalysisSQL.txt"
 find_sql_files(directory, output_file)
 
 print(f"Analysis completed. Results are written to {output_file}.")
