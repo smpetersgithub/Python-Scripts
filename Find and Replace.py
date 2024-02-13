@@ -74,12 +74,7 @@ if __name__ == "__main__":
     if confirmation == 'y':
         encodings = ['utf-8-sig', 'utf-8', 'latin-1']
 
-        directories = [
-            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\',
-            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\',
-            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\',
-            r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\',
-        ]
+        directories = []
         
         replace_in_files(directories, search_pattern, replacement_string, encodings)
         print("Done processing all directories.")
