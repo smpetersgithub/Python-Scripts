@@ -92,12 +92,7 @@ def main(config_file, directories, output_dir):
 # Configuration
 output_dir = r'C:\BabelfishCompass\Python Scripts\Output\\'
 config_file = r'C:\BabelfishCompass\Python Scripts\SQL Sleuth Configuration.txt'
-directories = [
-    r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\',
-    r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\',
-    r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\',
-    r'C:\b\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\\'
-]
+directories = []
 
 # Execute the main function
 if __name__ == "__main__":
