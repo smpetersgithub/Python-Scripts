@@ -66,12 +66,7 @@ def delete_first_n_lines(directories, num_lines, encodings=('utf-8', 'latin-1'))
 
 if __name__ == "__main__":
     # Directories to process
-    directories = [
-        #r'C:\a\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\new_install_before\\'
-        #,r'C:\a\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\before_every_upgrade\\'
-        #,r'C:\a\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\bsav2_upgrade\\'
-        #, r'C:\a\bamplus-postgres-research-main\bamplus-postgres-research-main\Bam+ Installer\module-packages\BAMPlus.BAM.Bridge\database\after_every_upgrade\'    ]    
-    ]
+    directories = []
     num_lines_to_delete = 6  # Adjust the number of lines you want to delete
 
     delete_first_n_lines(directories, num_lines_to_delete)
