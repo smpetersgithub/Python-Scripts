@@ -1,3 +1,26 @@
+"""
+SQL File Analysis and Keyword Counting
+
+Description:
+    This script searches through a given directory and its subdirectories for .sql files, analyzing each for specific SQL commands 
+    ('CREATE', 'ALTER', 'INSERT', 'UPDATE'). It compiles information such as file size, directory path, encoding, and counts of 
+    each SQL command into a CSV-formatted output file.
+
+Usage:
+    Set the 'directory' variable to the path of the directory you wish to analyze. Update the 'output_file' variable with the full 
+    path and file name where you want the analysis results saved. Run the script to perform the analysis and save the results.
+
+Features:
+    - Recursively searches directories for .sql files.
+    - Analyzes files for 'CREATE', 'ALTER', 'INSERT', 'UPDATE' SQL commands.
+    - Captures file size, directory path, and file encoding.
+    - Outputs analysis results in CSV format to a specified file.
+
+Note:
+    This script is designed to handle files with different encodings by attempting to open files using a list of common encodings. 
+    Modify the 'encodings' list in the 'analyze_sql_file' function if additional encodings need to be supported.
+"""
+
 import os
 
 def find_sql_files(directory, output_file):
