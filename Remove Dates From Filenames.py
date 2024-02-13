@@ -2,7 +2,7 @@ import os
 import re
 
 # Replace 'your/directory/path' with the path to the directory you want to search
-directory_path = r'C:\BabelfishCompass\SQLCreateCrawler\ToDeploy'
+directory_path = r'C:\temp\\'
 
 # Regex pattern to match '_YYYYMMDD' before the file extension
 date_pattern = re.compile(r'(_\d{8})(\.\w+)$')
