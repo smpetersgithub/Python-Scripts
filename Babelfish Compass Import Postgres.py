@@ -15,10 +15,7 @@ Set the `user_provided_directory` and `babelfish_compass_directory` variables to
 Requirements:
 - Python 3.6 or later
 - psycopg2 library for PostgreSQL database connection
-- Babelfish Compass installed and accessible via command line
-
-Author: [Your Name]
-Last Modified: [Date]
+- Babelfish Compass installed and accessible via the command line
 
 """
 
