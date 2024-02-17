@@ -24,7 +24,7 @@ import subprocess
 import psycopg2
 
 # Hardcoded directory paths
-user_provided_directory = r"C:\\a\bamplus-postgres-research-main\bamplus-postgres-research-main\Workstation-036-DDL"
+user_provided_directory = r"C:\\...."
 babelfish_compass_directory = r"C:\\BabelfishCompass"
 
 def run_babelfish_commands(sql_file, babelfish_compass_directory):
