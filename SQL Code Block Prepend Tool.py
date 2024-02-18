@@ -62,6 +62,7 @@ import psycopg2
 # Options: 'sql_server' or 'postgres'
 database_system = 'postgres'  # Change this to 'postgres' / 'sql_server' as needed
 
+# Example connection information
 # SQL Server connection parameters
 sql_server_config = {
     'server': 'DESKTOP-D324ETP\\SQLEXPRESS01',
@@ -69,6 +70,7 @@ sql_server_config = {
     'trusted_connection': 'yes'
 }
 
+# Example connection information
 # PostgreSQL connection parameters
 postgres_config = {
     'database': 'test_db',
